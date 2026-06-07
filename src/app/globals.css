@@ -1,0 +1,290 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ============ Brand tokens ============ */
+:root {
+  --background: #ffffff;
+  --foreground: #14181b;
+  --card: #ffffff;
+  --card-foreground: #14181b;
+  --muted: #5e6770;
+  --muted-bg: #f4f6f8;
+  --border: #e6e9ee;
+  --primary: #16a34a;          /* зелёный акцент (глубже, серьёзнее) */
+  --primary-dark: #11823b;     /* hover */
+  --primary-foreground: #ffffff;
+  --overlay: rgba(0, 0, 0, 0.35);
+  --grid-line: rgba(22, 163, 74, 0.045);
+  --card-shadow: 0 1px 2px rgba(16, 24, 20, 0.04), 0 6px 20px rgba(16, 24, 20, 0.05);
+  --card-shadow-hover: 0 3px 10px rgba(16, 24, 20, 0.07), 0 16px 40px rgba(16, 24, 20, 0.09);
+}
+
+.dark {
+  --background: #070d0a;
+  --foreground: #ffffff;
+  --card: #0c130f;
+  --card-foreground: #ffffff;
+  --muted: #8c958f;
+  --muted-bg: #0e1712;
+  --border: #16291d;
+  --primary: #16a34a;
+  --primary-dark: #1bb154;
+  --primary-foreground: #ffffff;
+  --overlay: rgba(0, 0, 0, 0.5);
+  --grid-line: rgba(26, 173, 92, 0.06);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-bg: var(--muted-bg);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-foreground: var(--primary-foreground);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --radius-card: 0.875rem;
+  --radius-card-sm: 0.625rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Сетка-подложка (тёмная тема и тёмные секции) */
+.grid-bg {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Мягкая тень карточек (только светлая тема) */
+.shadow-card {
+  box-shadow: var(--card-shadow);
+}
+.dark .shadow-card {
+  box-shadow: none;
+}
+
+/* Hover-подъём карточек */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  will-change: transform;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+.dark .hover-lift:hover {
+  box-shadow: none;
+}
+
+/* ═══ Ecosystem network animations ═══ */
+.eco-flow {
+  stroke-dasharray: 4 8;
+  animation: ecoFlow 1.1s linear infinite;
+}
+@keyframes ecoFlow {
+  to { stroke-dashoffset: -24; }
+}
+.eco-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: ecoPulse 3.2s ease-out infinite;
+}
+@keyframes ecoPulse {
+  0% { opacity: 0.5; transform: scale(0.5); }
+  100% { opacity: 0; transform: scale(1.6); }
+}
+.eco-spin {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: ecoSpin 30s linear infinite;
+}
+@keyframes ecoSpin {
+  to { transform: rotate(360deg); }
+}
+.eco-node {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: ecoBlink 2.6s ease-in-out infinite;
+}
+@keyframes ecoBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+/* HUD scanline */
+.eco-scan {
+  animation: ecoScan 6s linear infinite;
+}
+@keyframes ecoScan {
+  0% { top: 0%; opacity: 0; }
+  8% { opacity: 0.55; }
+  92% { opacity: 0.55; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* glowing telemetry dot */
+.tele-live {
+  animation: teleLive 1.6s ease-in-out infinite;
+}
+@keyframes teleLive {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.5); }
+  50% { opacity: 0.6; box-shadow: 0 0 0 4px rgba(22, 163, 74, 0); }
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* ═══ Premium card sheen on hover ═══ */
+.sheen {
+  position: relative;
+}
+.sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.35) 48%,
+    transparent 66%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.8s ease;
+  pointer-events: none;
+  opacity: 0.7;
+}
+.sheen:hover::after {
+  transform: translateX(120%);
+}
+.dark .sheen::after {
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.07) 48%,
+    transparent 66%
+  );
+}
+
+/* Animated accent bar (scales in on hover) */
+.accent-bar {
+  position: relative;
+}
+.accent-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--primary);
+  border-radius: 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.accent-bar:hover::before {
+  transform: scaleX(1);
+}
+
+/* Marquee */
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: inline-flex;
+  animation: marquee 28s linear infinite;
+}
+.marquee-mask:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* ═══ Chart draw-in animations (trigger on .is-visible ancestor) ═══ */
+.chart-bar {
+  transform-box: fill-box;
+  transform-origin: bottom;
+  transform: scaleY(0);
+}
+.is-visible .chart-bar {
+  animation: barGrow 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+@keyframes barGrow {
+  to { transform: scaleY(1); }
+}
+.chart-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+.is-visible .chart-draw {
+  animation: chartDraw 1.5s ease forwards 0.25s;
+}
+@keyframes chartDraw {
+  to { stroke-dashoffset: 0; }
+}
+.chart-fade {
+  opacity: 0;
+}
+.is-visible .chart-fade {
+  animation: chartFade 0.6s ease forwards 0.9s;
+}
+@keyframes chartFade {
+  to { opacity: 1; }
+}
+
+/* IntersectionObserver reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll-snap для мобильных каруселей */
+.snap-x-row {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.snap-x-row > * {
+  scroll-snap-align: start;
+}
+
+::selection {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Accessibility: respect reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
