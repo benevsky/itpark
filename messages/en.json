@@ -1,0 +1,324 @@
+{
+  "nav": {
+    "homes": "Homes",
+    "farm": "Farm",
+    "infra": "Amenities",
+    "invest": "Investors",
+    "about": "About",
+    "ecosystem": "Ecosystem",
+    "partners": "Partners",
+    "contacts": "Contacts",
+    "cta": "Get in Touch"
+  },
+  "common": {
+    "details": "Learn more",
+    "back": "← Home",
+    "all_sections": "All sections"
+  },
+  "hero": {
+    "eyebrow": "A New-Generation Private IT City · 54 ha near Almaty",
+    "line1": "Live.",
+    "line2": "Work.",
+    "line3": "Earn.",
+    "sub": "A smart-city ecosystem on a single digital platform: IoT, AI and NICAS. An agri-farm, IT residences and eco-tourism — 65 km from Almaty.",
+    "cta_homes": "Browse Homes",
+    "cta_invest": "For Investors",
+    "stat1_val": "54 ha", "stat1_lbl": "freehold land",
+    "stat2_val": "200 t", "stat2_lbl": "fish per year",
+    "stat3_val": "18–24%", "stat3_lbl": "ROI",
+    "stat4_val": "$4.8M", "stat4_lbl": "total cluster"
+  },
+  "about": {
+    "eyebrow": "Ready Platform",
+    "title": "We're not building from scratch",
+    "sub": "Technology is deployed on an operating foundation: the land, water, utilities and production buildings have been running since 2017. This lowers capital expenditure and shortens the path to payback.",
+    "assets": [
+      { "icon": "MapPin",    "title": "54 ha freehold",              "desc": "Unencumbered land valued at $2.7–4.3M. Serves as collateral to secure project financing." },
+      { "icon": "Waves",     "title": "4 flowing lakes",             "desc": "Stocked and operating since 2017: duck, carp, catfish. A ready base for aquaculture and recreation." },
+      { "icon": "Droplets",  "title": "Artesian springs",            "desc": "Constant water temperature of 12–18 °C — an ideal regime for trout and sturgeon with zero cooling cost." },
+      { "icon": "Building2", "title": "3,500 m² warehouse (h = 7 m)","desc": "Under construction for RAS tanks. Access roads and logistics areas are already prepared." },
+      { "icon": "Zap",       "title": "Roads & utilities",           "desc": "Electricity, water supply and internal roads are connected and commissioned." },
+      { "icon": "Home",      "title": "Production buildings",        "desc": "Stables, workshop and greenhouses have run since 2017 and are ready to integrate into the new production loop." }
+    ],
+    "more": "Learn more about the project"
+  },
+  "farm": {
+    "eyebrow": "Phase 1 · Project Core",
+    "title": "Recirculating Aquaculture System",
+    "sub": "A full-cycle RAS for 200 tonnes of fish per year — from egg incubation to market weight. Full automation, water-quality control and an in-house feed line deliver predictable economics and year-round production.",
+    "tech": [
+      "Full-cycle RAS: egg incubation → fry → market weight 300–500 g",
+      "100% IoT control: pH / O₂ / temperature / NH₃ sensors, auto-feeding, AI biomass forecasting",
+      "Triple power backup: grid + 100 kW diesel + 50 kW solar panels",
+      "In-house feed line — 30–40% savings on operating costs",
+      "Artesian water 12–18 °C — zero cooling expenditure",
+      "Refrigerated 3.5 t truck — same-day fresh fish delivery to Almaty"
+    ],
+    "fish": [
+      { "name": "Rainbow Trout", "temp": "12–16 °C", "price": "$3.5–5.0 / kg", "cycle": "10–12 mo", "tag": "Main species", "desc": "The core RAS crop. Steady demand, high turnover and a predictable path to market weight." },
+      { "name": "Sturgeon",      "temp": "15–20 °C", "price": "$12–25 / kg",  "cycle": "18–24 mo", "tag": "Premium · caviar", "desc": "A premium segment with dual economics: market fish plus high-value black caviar." },
+      { "name": "Carp",          "temp": "18–28 °C", "price": "$1.5–2.5 / kg", "cycle": "12–16 mo", "tag": "Mass market", "desc": "A mass species with stable domestic demand. Simple husbandry and low cost base." },
+      { "name": "Silver carp",   "temp": "15–28 °C", "price": "$1.2–2.0 / kg", "cycle": "year-round", "tag": "Biofilter", "desc": "A natural biofilter: it clears plankton from the water while yielding marketable product." }
+    ],
+    "loop_panel": "Closed water loop · 0% discharge",
+    "loop_stages": ["Tanks", "Mech. filter", "Biofilter", "Degassing · O₂", "UV treatment"],
+    "loop_title": "RAS",
+    "loop_sub": "closed loop",
+    "loop_note": "12–18 °C · artesian water",
+    "income_cta": "Learn about resident passive income →",
+    "more": "Explore the farm"
+  },
+  "homes": {
+    "eyebrow": "Phase 2 · IT Village Residences",
+    "title": "Choose your home",
+    "sub": "Glulam timber homes by AltaiLes — 19 years in business and 2,300+ completed projects. Assembly in 3–5 months, smart engineering systems and passive farm income for every resident.",
+    "filter_all": "All",
+    "filter_1floor": "Single-storey",
+    "filter_2floor": "Two-storey",
+    "filter_bath": "With bathhouse",
+    "income_badge": "Passive farm income included",
+    "smart_badge": "Smart home",
+    "smart_title": "A smart home in every residence",
+    "smart_desc": "Climate, lighting, access and energy monitoring by Turan Telematika and QR System. Controlled from a mobile app and integrated with the cluster's IoT platform.",
+    "more": "View details",
+    "view_all": "Browse all homes"
+  },
+  "vision": {
+    "eyebrow": "Full Cluster Concept",
+    "title": "What Will Be Built",
+    "sub": "16 functional facilities across 54 hectares — a single ecosystem uniting agriculture, housing, business and tourism infrastructure.",
+    "objects": [
+      { "title": "Gas Station",        "desc": "A fuel station at the entrance serving residents and through-traffic on the Almaty–Khorgos highway." },
+      { "title": "Restaurant",         "desc": "Signature cuisine from local produce: own RAS fish, greenhouse organics and farm dairy." },
+      { "title": "SPA Centre",         "desc": "Hammam, Finnish sauna, pool and treatment rooms. A year-round wellness scenario." },
+      { "title": "Cottages · 25 units","desc": "Guest homes for rent: passive income for residents and a room pool for eco-tourism." },
+      { "title": "Clubhouse",          "desc": "Community hub: lounge, meeting rooms and an events space — a gathering point for residents." },
+      { "title": "Hotel · 10 rooms",   "desc": "A boutique hotel for cluster guests, investors and business-programme participants." },
+      { "title": "Equestrian Club",    "desc": "Stables and arena: rides, hippotherapy and a children's section within the wellness loop." },
+      { "title": "Mini Zoo",           "desc": "A petting farm with domestic animals: family leisure and weekend educational programmes." },
+      { "title": "Aqua Farm · RAS",    "desc": "The project core: a recirculating system for 200 t of fish a year — trout, sturgeon, carp." },
+      { "title": "Glamping · 8 tents", "desc": "All-season lakeside tents: weekend eco-tourism 65 km from Almaty." },
+      { "title": "Dairy Workshop",     "desc": "Processing milk from the partner farm: cheeses and dairy delivered to Almaty." },
+      { "title": "Greenhouses · 1,000 m²","desc": "Year-round greens, vegetables and seedlings for the restaurant and retail supply." },
+      { "title": "Coworking · 200 m²", "desc": "A 40-seat workspace with 1 Gbps fibre for the cluster's IT residents." },
+      { "title": "Beach Zone",         "desc": "A landscaped lakeshore: piers, loungers and SUP rental — the summer recreation area." },
+      { "title": "Gate & Perimeter",   "desc": "A checkpoint and guarded perimeter with 24/7 video surveillance." },
+      { "title": "Solar Panels",       "desc": "A 50 kW solar plant: lower operating costs and backup power for critical RAS infrastructure." }
+    ]
+  },
+  "infra": {
+    "eyebrow": "Amenities",
+    "title": "Life at NOMAD IT PARK",
+    "sub": "You'll want to stay: mornings fishing your own lake, days working on gigabit fibre, evenings in the hammam as the sun sets over the Tian Shan. All 65 km from Almaty, all on one digital platform.",
+    "day": [
+      { "time": "Morning", "label": "Fishing your own lake" },
+      { "time": "Day", "label": "Work in 1 Gbps coworking" },
+      { "time": "Evening", "label": "Hammam and a Tian Shan sunset" }
+    ],
+    "items": [
+      { "icon": "Monitor",   "title": "Coworking", "metric": "40 seats", "desc": "200 m², 1 Gbps fibre and a 30-seat conference room. Work out of town with no compromise on speed." },
+      { "icon": "Fish",      "title": "Fishing at your door", "metric": "4 lakes", "desc": "Private stocked lakes right off your porch: piers, an angler's cabin and trout you raised yourself." },
+      { "icon": "Smartphone","title": "A smart home in your pocket", "metric": "24/7", "desc": "Climate, access and farm income in one app. The city responds to a tap." },
+      { "icon": "Tent",      "title": "Lakeside glamping", "metric": "8 tents", "desc": "All-season lakeside tents — for guests, weekends and eco-tourism from the city." },
+      { "icon": "Waves",     "title": "SPA & equestrian", "metric": "Phase 3", "desc": "Hammam, sauna, hippotherapy and koumiss therapy — a wellness loop for body and mind." },
+      { "icon": "Leaf",      "title": "Your own organics", "metric": "1,000 m²", "desc": "Greenhouses, koumiss and dairy from your own farm — on your table and in the cluster restaurant." }
+    ],
+    "more": "Explore amenities",
+    "conclusion": "That is what NOMAD IT PARK is about: technology, nature and income on one estate — working for you."
+  },
+  "invest": {
+    "eyebrow": "Investment Opportunity",
+    "title": "A Phased Cluster",
+    "sub": "We start with RAS — it generates cash flow from year one. Phases 2 and 3 are financed from operating profit, which lowers investment risk.",
+    "quote": "RAS earns from year one — and finances the rest of the city itself.",
+    "chart_title": "Revenue & net profit, $/yr",
+    "legend_rev": "Revenue",
+    "legend_profit": "Net profit",
+    "alloc_title": "CAPEX allocation by phase",
+    "model_title": "Financial model",
+    "model_caption": "Cash flow from RAS funds the next phases — investment risk is spread over time.",
+    "usefunds_caption": "$4.8M is split across the production core, real estate and technology.",
+    "options_caption": "Two entry formats: from a stake in the RAS core to participation in the whole cluster.",
+    "engine_panel": "Cash engine · self-financing",
+    "engine_flow": "cash flow",
+    "engine_reinvest": "profit reinvested into the next phases",
+    "engine_outcome": "$945K / yr by 2029",
+    "calc_title": "Investor calculator",
+    "calc_amount": "Investment amount",
+    "calc_equity": "Estimated equity",
+    "calc_income": "Annual income at maturity",
+    "calc_note": "Indicative estimate at 18–24% ROI. Exact terms are in the investment memorandum.",
+    "note": "Management forecast. This material is for information only and is not a public offer.",
+    "phases": [
+      { "tag": "Phase 1 · Now",    "name": "RAS Core",         "capex": "$1.2M", "income": "EBITDA $210K/yr · ROI ~17%",    "pct": 31 },
+      { "tag": "Phase 2 · Q2 2026","name": "IT Residences",    "capex": "$1.4M", "income": "25 cottages · +$120K/yr",        "pct": 36 },
+      { "tag": "Phase 3 · 2027+",  "name": "Eco-Tourism",      "capex": "$1.25M","income": "SPA · Glamping · +$390K/yr",     "pct": 33 }
+    ],
+    "revenue_chart": [
+      { "year": "2025", "usd": 65000,  "profit": 5000,   "label": "Phase 1 launch" },
+      { "year": "2026", "usd": 240000, "profit": 60000,  "label": "Phase 1+2" },
+      { "year": "2027", "usd": 620000, "profit": 300000, "label": "all phases" },
+      { "year": "2028", "usd": 822000, "profit": 450000, "label": "" },
+      { "year": "2029", "usd": 945000, "profit": 571000, "label": "" }
+    ],
+    "summary": [
+      { "key": "Total investment (incl. contingency)", "val": "$4.796M" },
+      { "key": "Revenue at maturity (2029)",           "val": "~$945K/yr" },
+      { "key": "Net profit at maturity",               "val": "~$571K/yr" },
+      { "key": "ROI",                                  "val": "18–24%" },
+      { "key": "Payback period",                       "val": "4–5 years" },
+      { "key": "Government support",                   "val": "up to $1.577M" },
+      { "key": "Collateral",                           "val": "54 ha = $2.7–4.3M" },
+      { "key": "Jobs created",                         "val": "30+ in rural area" }
+    ],
+    "option_a": {
+      "label": "Option A",
+      "sub": "Phase 1 only",
+      "items": ["Investment: $1.2M", "Equity: 20–25%", "First dividends: Q3 2026", "Payback: 3–5 years"]
+    },
+    "option_b": {
+      "label": "Option B",
+      "sub": "Full project",
+      "items": ["Investment: $1–3M", "Equity: 20–40%", "First dividends: Q3 2026", "Exit: buyback yr 5 / IPO"]
+    },
+    "support": [
+      { "name": "Qazaqstan Digital", "amount": "up to $333,000", "desc": "IoT + AI + mobile application" },
+      { "name": "Agrobusiness-2030", "amount": "up to $444,000", "desc": "RAS + own feed production" },
+      { "name": "KazAgro",           "amount": "up to $500,000", "desc": "subsidised loan 6–9%" },
+      { "name": "Damu Fund (SME)",   "amount": "up to $300,000", "desc": "small and medium business support" }
+    ],
+    "usefunds_title": "Use of funds",
+    "usefunds": [
+      { "name": "RAS equipment & launch", "amount": "$1.20M", "pct": 25 },
+      { "name": "IT residences · cottages", "amount": "$1.40M", "pct": 29 },
+      { "name": "Eco-tourism · SPA, glamping", "amount": "$1.25M", "pct": 26 },
+      { "name": "IoT, AI & digital platform", "amount": "$0.55M", "pct": 12 },
+      { "name": "Working capital & contingency", "amount": "$0.40M", "pct": 8 }
+    ],
+    "options_title": "Entry terms",
+    "support_title": "Government support",
+    "risks_title": "Risks & mitigation",
+    "risks": [
+      { "q": "Fish price market risk", "a": "Fish prices are exposed to seasonal and currency swings. We reduce the risk by diversifying species (trout, sturgeon, carp, silver carp) and focusing on the high-margin premium segment — sturgeon caviar. Direct contracts with Almaty restaurants and retail lock in sales volumes in advance." },
+      { "q": "RAS technology risk", "a": "A failure in the recirculating system could cost stock. Water quality is monitored by 100% IoT sensors (pH, O₂, temperature, NH₃) with automatic alarms, and triple power backup (grid + 100 kW diesel + 50 kW solar) prevents downtime. Partner experience and biomass insurance add further protection." },
+      { "q": "Timeline & execution risk", "a": "Construction and commissioning delays are common in new projects. Our risk is lower: the land, flowing lakes and production buildings have operated since 2017, the launch is phased, and equipment is bought on fixed contracts with clear delivery dates." },
+      { "q": "Financing risk", "a": "The project doesn't depend on a single tranche. Phase 1 (RAS) cash flow funds the later phases, reducing the need for external capital. Up to $1.577M in government support and 54 ha of collateral ($2.7–4.3M) add resilience." },
+      { "q": "Regulatory risk", "a": "Changes in agri and digital regulation could affect the project. We work in partnership with the relevant ministry (MITI/MCRIAP) and build solutions in line with the Agrobusiness-2030 and Qazaqstan Digital programmes — ensuring predictability and access to support." }
+    ],
+    "cta_tizer": "Download Investment Teaser",
+    "cta_meet": "Request a Meeting",
+    "more": "Full investor details"
+  },
+  "timeline": {
+    "eyebrow": "Growth plan",
+    "title": "Roadmap 2025–2030",
+    "sub": "A phased launch with managed risk: every year a measurable result, every phase funding the next.",
+    "items": [
+      { "period": "2025", "title": "Launch & Round A", "desc": "Incorporate the LLC, raise capital and subsidies, install RAS and deploy IoT across the entire site." },
+      { "period": "2026", "title": "Cluster launch", "desc": "Start the RAS farm, first fish sales in Almaty, deliver the first 10 cottages and onboard IT residents." },
+      { "period": "2027", "title": "Reach capacity", "desc": "Full 200 t/yr capacity, launch Phase 3 (SPA, glamping), first dividends to investors." },
+      { "period": "2028", "title": "Scale up", "desc": "Expand housing and services, grow revenue and in-house processing and logistics." },
+      { "period": "2029", "title": "Maturity", "desc": "Revenue ~$945K, net profit ~$571K, steady cash flow across the cluster." },
+      { "period": "2030", "title": "Replication", "desc": "Reach payback, prepare for buyback / IPO and replicate the model in other regions." }
+    ]
+  },
+  "location": {
+    "eyebrow": "Location & opportunity",
+    "title": "65 km from Almaty",
+    "sub": "The perfect balance: next to Almaty's two-million market, yet in the clean Tian Shan foothills. Close to the money, far from the noise.",
+    "opps": [
+      { "icon": "Building", "title": "Market on the doorstep", "desc": "Almaty (2M+) is the country's largest city: demand for fresh fish, organics and out-of-town real estate." },
+      { "icon": "Car", "title": "Logistics under 1 hour", "desc": "The Almaty–Khorgos highway and 80 km to the airport — fast access to domestic and export markets." },
+      { "icon": "Mountain", "title": "Tourist flow", "desc": "The Tian Shan foothills are a popular weekend destination for city dwellers." },
+      { "icon": "Droplets", "title": "Clean ecology", "desc": "Artesian water, flowing lakes and mountain air — the basis for both aquaculture and quality of life." }
+    ],
+    "items": [
+      { "icon": "MapPin",  "text": "Akshi village, 32 Kanapiya Kusaina St\nEnbekshy-Kazakhstan District, Almaty Region" },
+      { "icon": "Car",     "text": "65 km along the Almaty–Khorgos highway" },
+      { "icon": "Building","text": "30 minutes to Kaskelen" },
+      { "icon": "Plane",   "text": "80 km from Almaty International Airport" },
+      { "icon": "Mountain","text": "Panoramic views of the Tian Shan mountains" }
+    ],
+    "map_btn": "Open in Google Maps"
+  },
+  "ecosystem": {
+    "eyebrow": "Not a village — an ecosystem",
+    "title": "A smart city on one platform",
+    "sub": "Every facility in the cluster is connected to a single digital platform. Data from thousands of sensors, AI analytics and automation manage energy, water, security and resident income in real time.",
+    "quote": "One city, one platform: every sensor, home and income in a single system.",
+    "layer_services_label": "Resident services",
+    "layer_services": ["Smart homes", "Coworking", "Farm income", "Security", "Mobility"],
+    "layer_platform_label": "Digital platform",
+    "layer_platform": ["IoT dashboard", "AI analytics", "Digital twin", "Unified resident ID"],
+    "layer_infra_label": "Physical infrastructure",
+    "layer_infra": ["Grid + solar", "Water & RAS", "1 Gbps connectivity", "24/7 CCTV"],
+    "nodes": ["Smart homes", "RAS farm", "Coworking", "Mobility", "Power grid", "Water supply", "1 Gbps network", "Security"],
+    "panel_title": "Digital platform · real-time",
+    "telemetry": [
+      { "label": "Energy · grid + solar", "val": "1.24 MW" },
+      { "label": "Water · RAS loop", "val": "340 m³/h" },
+      { "label": "Sensors online", "val": "2,480" },
+      { "label": "Platform uptime", "val": "99.9%" }
+    ],
+    "core_label": "Technology core",
+    "stats": [
+      { "val": "100%", "lbl": "on smart systems" },
+      { "val": "1", "lbl": "digital platform" },
+      { "val": "24/7", "lbl": "monitoring & SOC" },
+      { "val": "16", "lbl": "connected facilities" }
+    ]
+  },
+  "nicas": {
+    "eyebrow": "Technology core",
+    "title": "NICAS — an alliance of competencies",
+    "sub": "Behind the cluster's digital platform stands NICAS — a research and engineering alliance of 5+ Kazakhstani companies and a partner of NIIAS at RZhD. A full cycle: from electronics design to serial production and integration.",
+    "partner_note": "Partner of NIIAS at RZhD · CIS industry standard · 1300+ patents",
+    "visit": "Website"
+  },
+  "gallery": {
+    "eyebrow": "Vision",
+    "title": "A city that works for the resident",
+    "sub": "We're not building a village but a self-sufficient ecosystem: technology generates income, nature delivers quality of life, and a single digital platform ties it all into one organism.",
+    "quote": "Home, work and income — on one estate, 65 km from the metropolis."
+  },
+  "team": {
+    "eyebrow": "Team & Expertise",
+    "title": "Who is behind the project",
+    "sub": "The cluster is run by a team with a track record in technology, agriculture and capital raising. Full bios are provided in the investment data-room.",
+    "note": "Full team roster available on request"
+  },
+  "partners": {
+    "eyebrow": "Partners & Technology Core",
+    "logos_title": "The project's partner ecosystem",
+    "title": "Strategic Partners",
+    "sub": "The project is backed by government institutions, international technology companies and industry partners — from cloud infrastructure and industrial automation to agri-logistics and export terminals."
+  },
+  "faq": {
+    "eyebrow": "Transparency",
+    "title": "Questions & risks",
+    "sub": "The project's key risks and how we manage them. The full list is in the investment memorandum."
+  },
+  "cta": {
+    "eyebrow": "Join us",
+    "title": "Become Part of NOMAD IT PARK",
+    "sub": "Choose how you take part: a home to live in, a stake in the ecosystem, or a strategic partnership. The team replies during business hours and opens access to the investment data-room.",
+    "points": ["54 ha of ready, freehold land", "RAS income from year one", "NICAS technology core", "Government support up to $1.577M"],
+    "btn_homes": "Browse Homes",
+    "btn_invest": "Invest",
+    "btn_tg": "Message on Telegram"
+  },
+  "footer": {
+    "tagline": "A private IT city · smart-city ecosystem near Almaty",
+    "copyright": "© 2025 NOMAD IT PARK · Almaty Region · Kazakhstan",
+    "privacy": "Privacy Policy"
+  },
+  "dialog": {
+    "title": "Get in Touch",
+    "name": "Full name",
+    "phone": "Phone number",
+    "type_live": "I want to live here",
+    "type_invest": "I want to invest",
+    "submit": "Send",
+    "success": "Request received. We will be in touch during business hours."
+  }
+}
